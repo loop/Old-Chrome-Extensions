@@ -1,0 +1,15 @@
+{
+   "background_page": "background.html",
+   "browser_action": {
+      "default_icon": "wf-16.png",
+      "default_title": "What font is this?"
+   },
+   "description": "WhatFont allows you to view what fonts are being used on a webpage. With a simple click you can hover over the text and find out.",
+   "icons": {
+      "48": "wf-48.png",
+	  "64": "wf-64.png"
+   },
+   "name": "WhatFont For Chrome",
+   "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+   "version": "1.1"
+}

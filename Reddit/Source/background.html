@@ -1,0 +1,11 @@
+<html>
+<head>
+<script>
+  // Called when the user clicks on the browser action.
+  chrome.browserAction.onClicked.addListener(function(tab) {
+    var action_url = "javascript:location.href='http://www.reddit.com/submit?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title)";
+    chrome.tabs.update(tab.id, {url: action_url});
+  });
+</script>
+</head>
+</html>

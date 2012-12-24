@@ -1,0 +1,11 @@
+<html>
+<head>
+<script>
+  // Called when the user clicks on the browser action.
+  chrome.browserAction.onClicked.addListener(function(tab) {
+    var action_url = "javascript:(function(){document.body.appendChild(document.createElement('scr'+'ipt')).setAttribute('src', 'http://chengyinliu.com/wf.js')})();";
+    chrome.tabs.update(tab.id, {url: action_url});
+  });
+</script>
+</head>
+</html>

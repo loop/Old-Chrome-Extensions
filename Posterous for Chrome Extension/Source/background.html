@@ -1,0 +1,11 @@
+<html>
+<head>
+<script>
+  // Called when the user clicks on the browser action.
+  chrome.browserAction.onClicked.addListener(function(tab) {
+    var action_url = "javascript:var b=document.body;var POSTEROUS___bookmarklet_domain='http://posterous.com';var d=new Date();var e=(new Date(d.getFullYear(),d.getMonth(),d.getDate())).getTime();if(b&&!document.xmlVersion){void(z=document.createElement('script'));void(z.type='text/javascript');void(z.src='http://posterous.com/javascripts/bookmarklet2.js?'+e);void(b.appendChild(z));}else{}";
+    chrome.tabs.update(tab.id, {url: action_url});
+  });
+</script>
+</head>
+</html>

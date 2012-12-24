@@ -1,0 +1,15 @@
+{
+   "background_page": "background.html",
+   "browser_action": {
+      "default_icon":"icon.png",
+      "default_title": "Submit to Hacker News"
+   },
+   "description": "Little clean icon to easily submit to Hacker News. Simple to use and light-weight.",
+   "icons": {
+      "48": "icon-2.png",
+	  "64": "icon-3.png"
+   },
+   "name": "Submit To Hacker News",
+   "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+   "version": "1"
+}

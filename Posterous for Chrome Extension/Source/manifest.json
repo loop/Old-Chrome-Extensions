@@ -1,0 +1,15 @@
+{
+   "background_page": "background.html",
+   "browser_action": {
+      "default_icon": "posterous-16.png",
+      "default_title": "Share this page on Posterous"
+   },
+   "description": "I love Posterous and use the bookmarklet a lot, so I thought it'd be handy to use an icon instead of the bookmarks bar.",
+   "icons": {
+      "128": "posterous-128.png",
+      "48": "posterous-48.png"
+   },
+   "name": "Posterous for Chrome",
+   "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+   "version": "0.1"
+}

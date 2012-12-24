@@ -1,0 +1,11 @@
+<html>
+<head>
+<script>
+  // Called when the user clicks on the browser action.
+  chrome.browserAction.onClicked.addListener(function(tab) {
+    var action_url = "javascript:q=location.href;if(document.getSelection){d=document.getSelection();}else{d='';};p=document.title;void(open('https://pinboard.in/add?showtags=yes&url='+encodeURIComponent(q)+'&description='+encodeURIComponent(d)+'&title='+encodeURIComponent(p),'Pinboard', 'toolbar=no,width=700,height=600'));";
+    chrome.tabs.update(tab.id, {url: action_url});
+  });
+</script>
+</head>
+</html>

@@ -1,0 +1,15 @@
+{
+   "background_page": "background.html",
+   "browser_action": {
+      "default_icon": "pinboard-16.png",
+      "default_title": "Save/Read Later on Pinboard"
+   },
+   "description": "Little clean icon to easily pinboard items to your Pinboard account. Really clean and fast.",
+   "icons": {
+      "48": "pinboard-48.png",
+	  "64": "pinboard-64.png"
+   },
+   "name": "Pinboard For Chrome",
+   "permissions": [ "tabs", "http://*/*", "https://*/*" ],
+   "version": "1.1"
+}
